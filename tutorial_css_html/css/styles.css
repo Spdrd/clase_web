@@ -3,11 +3,31 @@
 }
 
 * {
-    border: 1px solid red;
+    border: 1px solid rgb(68, 0, 255);
 }
 
 .footer {
-    background-color: black;
-    text-align: center;
+    background-color: rgb(18, 145, 204);
     color: white;
+}
+
+span{
+    color: red;
+}
+
+a{
+    height: 200px;
+}
+
+#indice:nth-child(){
+    color: aqua;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+html, body{
+    padding: 0;
+
 }
