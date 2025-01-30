@@ -1,0 +1,13 @@
+.small{
+    font-size: 12px;;
+}
+
+* {
+    border: 1px solid red;
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
