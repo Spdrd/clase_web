@@ -1,4 +1,15 @@
 #bienvenida img{
-    float: right;
-    he
+    height: 200px;
+    margin: 10px;
+    border: 1px solid black;
 }
+
+#bienvenida .left{
+    float: left;
+}
+
+#bienvenida .right{
+    float:right;
+}
+
+
