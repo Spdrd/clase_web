@@ -101,7 +101,7 @@ Cambia el color de las viñetas y numeros de las listas
     text-decoration: none;
 }
 
-#material_interes a:hover{
+a:hover{
     color: aquamarine;
 }
 
