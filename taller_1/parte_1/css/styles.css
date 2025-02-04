@@ -3,20 +3,32 @@ Fuente Google Fonts
 */
 *{
     font-family: "Roboto Mono", serif;
+    color: white;
 }
 
-#barra_menu{
+
+body{
+    background-color: black;
+}
+
+nav{
     position: fixed;
     background-color: rgb(46, 43, 226);
     padding: 10px;
+    margin-left: 0%;
     top: 0;
+    width: 100%;
+}
+
+nav a{
+    margin-left: 5%;
 }
 
 .seccion{
     padding-top: 60px;
 }
 
-#barra_menu *{
+nav *{
     display: inline;
     color:beige;
     font-size: 30px;
@@ -26,7 +38,7 @@ Fuente Google Fonts
 }
 
 #barra_menu a:hover{
-    background-color: rgba(0, 0, 255, 0.384);
+    background-color: rgba(0, 204, 255, 0.236);
 }
 
 /*
@@ -80,6 +92,15 @@ tr:nth-child(odd){
     background-color: rgb(113, 184, 113);
 }
 
+tr:nth-child(even){
+    background-color: white;
+}
+
+tr:nth-child(even) td{
+    color: black;
+}
+
+
 /*
 Crea bordes de las secciones de la hoja de vida y 
 aplica el gradiente
@@ -103,5 +124,9 @@ Cambia el color de las viñetas y numeros de las listas
 
 a:hover{
     color: aquamarine;
+}
+
+a img:hover{
+    transform: scale(1.1);
 }
 
