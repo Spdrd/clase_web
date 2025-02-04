@@ -1,3 +1,3 @@
-console.log("Hello World");
 
-
+const lista = document.getElementById("lista");
+lista.innerHTML = "";
