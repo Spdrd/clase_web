@@ -1,3 +1,3 @@
+const a = document.getElementById("contenedo")
+console.log(a);
 
-const lista = document.getElementById("lista");
-lista.innerHTML = "";
