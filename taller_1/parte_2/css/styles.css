@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    font-family: "Rubik Mono One", serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 1px solid rgb(68, 0, 255);
+}
+
+div:hover {
+    background-color: rgba(22, 22, 22, 0.082);
+}
+
+nav {
+    background-color: rgb(109, 109, 109);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    height: 100px;
+}
+
+nav div {
+    margin: 0;
+    display: flex;
+    font-size: 50px;
+    width: 30%;
+}
+
+#titulo {
+    width: 600px;
+}
+
+#titulo h1 {
+    font-size: 70px;
+    vertical-align: middle;
+}
+
+#carrito {
+    width: 200px;
+}
+
+#carrito img {
+    height: 80%;
+}
+
+header {
+    background-color: rgb(179, 179, 179);
+    justify-content: space-between;
+    height: 300px;
+}
+
+header img {
+    height: 100%;
+}
+
+header div {
+    width: 49%;
+    height: 100%;
+    margin: 0;
+    display: inline-flex;
+}
+
+.centrado {
+    position: relative;
+}
+
+.centrado * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#presentacion h2 {
+    width: 100%;
+    font-size: 30px;
+    text-align: left;
+
+}
+
+#titulo_tienda {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.producto{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+
+
+.imagen_producto img{
+    height: 100px;
+}
