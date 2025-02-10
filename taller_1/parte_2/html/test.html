@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subsección Flotante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .subseccion {
+            display: none;
+            position: absolute;
+            top: 50px;  /* Ajusta la posición en la página */
+            left: 50px;
+            width: 250px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            z-index: 1000;  /* Asegura que esté sobre otros elementos */
+        }
+
+        .subseccion p {
+            margin: 0;
+        }
+
+        .cerrar {
+            background: none;
+            border: none;
+            font-size: 18px;
+            float: right;
+            cursor: pointer;
+            color: #555;
+        }
+
+        .cerrar:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn" onclick="toggleSubseccion()">Mostrar información</button>
+
+    <div class="subseccion" id="subseccion">
+        <button class="cerrar" onclick="toggleSubseccion()">✖</button>
+        <p>Este es el contenido de la subsección flotante.</p>
+    </div>
+
+    <script>
+        function toggleSubseccion() {
+            let subseccion = document.getElementById("subseccion");
+            if (subseccion.style.display === "none" || subseccion.style.display === "") {
+                subseccion.style.display = "block";
+            } else {
+                subseccion.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

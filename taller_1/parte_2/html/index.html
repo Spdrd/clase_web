@@ -14,9 +14,46 @@
     <body>
         <nav>
             <div id="titulo"> <h1>Rbks Store</h1></div>
-            <div id="carrito" class="centrado"><img
+            <div id="icono_carrito" class="centrado"><img
                     src="../images/shopping_cart_icon.png" alt></div>
         </nav>
+        <div id="carrito">
+            <header id="titulo_carrito"
+                class="centrado"><h2>Carrito</h2></header>
+            <ul id="lista_carrito">
+                <li class="cabecera_carrito">
+                    <span class="division separador"></span>
+                    <span
+                        class="contenido_carrito"><span>Imagen</span></span><span
+                        class="division separador"></span>
+                    <span
+                        class="contenido_carrito"><span>Nombre</span></span><span
+                        class="division separador"></span>
+                    <span
+                        class="contenido_carrito"><span>Precio</span></span><span
+                        class="division separador"></span>
+                    <span
+                        class="contenido_carrito"><span>Cantidad</span></span><span
+                        class="division separador"></span>
+                </li>
+                <hr>
+                <li class="producto_carrito">
+                    <span class="separador"></span>
+                    <span>
+                        <img class="contenido_carrito"
+                            src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/69415981_2/w=800,h=800,fit=pad"
+                            alt>
+                    </span>
+                    <span class="separador"></span>
+                    <span class="contenido_carrito"><span>Cubo 3x3</span></span>
+                    <span class="separador"></span>
+                    <span class="contenido_carrito"><span>1000$</span></span>
+                    <span class="separador"></span>
+                    <span class="contenido_carrito"><span>1</span></span><span
+                        class="separador"></span>
+                </li>
+            </ul>
+        </div>
         <header>
             <div id="presentacion" class="centrado">
                 <h2>De cuboadictos para cuboadictos</h2>
@@ -32,22 +69,58 @@
             <section id="productos">
                 <div class="producto">
                     <div class="imagen_producto">
-                        <img src="../images/3x3_cube_1.png" alt>
+                        <img
+                            src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/69415981_2/w=800,h=800,fit=pad"
+                            alt>
                     </div>
-                    <br>
                     <div class="titulo_producto">
-                        <h3>Producto 1</h3>
+                        <span>Cubo 3x3</span>
                     </div>
-                    <br>
-                    <div class="descripcion_producto">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Odit aspernatur quae fuga sed dolorum nobis
-                            excepturi itaque animi, rerum dolor optio vero
-                            perferendis voluptatem exercitationem. Quos
-                            aspernatur nostrum aperiam modi?</h4>
+                    <div class="atributos_producto">
+                        <ul>
+                            <li><span>Stikers: </span><span
+                                    class="stikers">Si</span></li>
+                            <li><span>Color de fondo: </span><span
+                                    class="color_fondo">Negro</span></li>
+                            <li><span>Marca: </span><span
+                                    class="marca">Rubiks</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>Precio: </span><span class="precio">1000$</span>
+                    </div>
+                    <div class="boton_comprar">
+                        <button>Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagen_producto">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/2/22/Mirror_Cube_solved.png"
+                            alt>
+                    </div>
+                    <div class="titulo_producto">
+                        <span>Cubo Mirror 3x3</span>
+                    </div>
+                    <div class="atributos_producto">
+                        <ul>
+                            <li><span>Stikers: </span><span
+                                    class="stikers">Si</span></li>
+                            <li><span>Color de fondo: </span><span
+                                    class="color_fondo">Negro</span></li>
+                            <li><span>Marca: </span><span
+                                    class="marca">Sh</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>Precio: </span><span class="precio">30000$</span>
+                    </div>
+                    <div class="boton_comprar">
+                        <button>Añadir al Carrito</button>
                     </div>
                 </div>
             </section>
         </main>
     </body>
+    <script src="../js/script.js"></script>
 </html>
