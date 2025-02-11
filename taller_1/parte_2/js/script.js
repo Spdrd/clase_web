@@ -15,28 +15,42 @@ const icono_carrito = document.querySelector("#icono_carrito");
 const div_carrito = document.querySelector("#carrito");
 const lista_carrito = document.querySelector("#lista_carrito");
 
-function actualizar_carrito() {
-    const li = document.createElement("li");
-    carrito.forEach(prod => {
-        if (prod.cantidad == 1) {
-            li.innerHTML = `
-            <span class="separador"></span>
-                    <span>
-                        <img class="contenido_carrito"
-                            src="${prod.imagen}"
-                            alt>
-                    </span>
-                    <span class="separador"></span>
-                    <span class="contenido_carrito"><span>${prod.nombre}</span></span>
-                    <span class="separador"></span>
-                    <span class="contenido_carrito"><span>${prod.precio}</span></span>
-                    <span class="separador"></span>
-                    <span class="contenido_carrito"><span>${prod.cantidad}</span></span><span
-                        class="separador"></span>
-            `;
+function actualizar_lista_carrito(nuevo_prod){
+    let nuevo = true;
+    carrito.forEach(prod => {        
+        if(prod.nombre === nuevo_prod.nombre){
+            prod.cantidad++;
+            nuevo = false;
         }
     });
-    lista_carrito.appendChild(li);
+
+    if(nuevo){
+        carrito.push(nuevo_prod);
+    }
+    
+}
+
+function actualizar_carrito() {
+    const li = document.createElement("li");
+    lista_carrito.innerHTML='';
+    carrito.forEach(prod => {
+        li.innerHTML = `
+        <span class="separador"></span>
+                <span>
+                    <img class="contenido_carrito"
+                        src="${prod.imagen}"
+                        alt>
+                </span>
+                <span class="separador"></span>
+                <span class="contenido_carrito"><span>${prod.nombre}</span></span>
+                <span class="separador"></span>
+                <span class="contenido_carrito"><span>${prod.precio}</span></span>
+                <span class="separador"></span>
+                <span class="contenido_carrito"><span>${prod.cantidad}</span></span><span
+                    class="separador"></span>
+        `;
+        lista_carrito.appendChild(li); 
+    });
 }
 
 
@@ -51,15 +65,11 @@ botones_agregar_carrito.forEach(boton => {
         const color_fondo = div_producto.querySelector(".color_fondo").textContent;
         const marca = div_producto.querySelector(".marca").textContent;
         const precio = div_producto.querySelector(".precio").textContent;
-        const producto = new Producto(imagen, nombre, stikers, color_fondo, marca, precio);
-        carrito.forEach(prod => {
-            if (prod.nombre === producto.nombre) {
-                producto.cantidad++;
-                return;
-            }
-        })
-        carrito.push(producto);
+        const nuevo_producto = new Producto(imagen, nombre, stikers, color_fondo, marca, precio);
+        actualizar_lista_carrito(nuevo_producto);        
         actualizar_carrito();
+        console.log(carrito);
+        
     });
 });
 
