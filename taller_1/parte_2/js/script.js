@@ -31,9 +31,10 @@ function actualizar_lista_carrito(nuevo_prod){
 }
 
 function actualizar_carrito() {
-    const li = document.createElement("li");
     lista_carrito.innerHTML='';
     carrito.forEach(prod => {
+        const li = document.createElement("li");
+
         li.innerHTML = `
         <span class="separador"></span>
                 <span>
@@ -66,7 +67,9 @@ botones_agregar_carrito.forEach(boton => {
         const marca = div_producto.querySelector(".marca").textContent;
         const precio = div_producto.querySelector(".precio").textContent;
         const nuevo_producto = new Producto(imagen, nombre, stikers, color_fondo, marca, precio);
-        actualizar_lista_carrito(nuevo_producto);        
+        actualizar_lista_carrito(nuevo_producto); 
+        console.log(carrito);
+               
         actualizar_carrito();
         console.log(carrito);
         
