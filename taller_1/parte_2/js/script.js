@@ -30,8 +30,44 @@ function actualizar_lista_carrito(nuevo_prod){
     
 }
 
+function limpiar_carrito(){
+    lista_carrito.innerHTML = `
+    <li class="cabecera_carrito">
+                    <span class="division separador"></span>
+                    <span
+                        class="contenido_carrito"><span>Imagen</span></span><span
+                        class="division separador"></span>
+                    <span
+                        class="contenido_carrito"><span>Nombre</span></span><span
+                        class="division separador"></span>
+                    <span
+                        class="contenido_carrito"><span>Precio</span></span><span
+                        class="division separador"></span>
+                    <span
+                        class="contenido_carrito"><span>Cantidad</span></span><span
+                        class="division separador"></span>
+                </li>
+    `
+}
+
 function actualizar_carrito() {
-    lista_carrito.innerHTML='';
+    lista_carrito.innerHTML = `
+    <li class="cabecera_carrito">
+                    <span class="division separador"></span>
+                    <span
+                        class="contenido_carrito"><span>Imagen</span></span><span
+                        class="division separador"></span>
+                    <span
+                        class="contenido_carrito"><span>Nombre</span></span><span
+                        class="division separador"></span>
+                    <span
+                        class="contenido_carrito"><span>Precio</span></span><span
+                        class="division separador"></span>
+                    <span
+                        class="contenido_carrito"><span>Cantidad</span></span><span
+                        class="division separador"></span>
+                </li>
+    `
     carrito.forEach(prod => {
         const li = document.createElement("li");
 

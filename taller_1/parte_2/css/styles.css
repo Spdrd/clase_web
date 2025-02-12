@@ -167,3 +167,10 @@ hr{
     margin: 5px;
 }
 
+.boton_limpiar{
+    width: 100%;
+    border: 1px solid black;
+    height: 100px;
+    display: flex;
+}
+
