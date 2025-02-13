@@ -83,7 +83,7 @@ header div {
 
 }
 
-#titulo_tienda {
+main h2{
     width: 100%;
     font-size: 50px;
     text-align: center;
@@ -169,8 +169,24 @@ hr{
 
 .boton_limpiar{
     width: 100%;
-    border: 1px solid black;
     height: 100px;
     display: flex;
+}
+
+.boton_limpiar button{
+    font-size: 30px;
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+}
+
+#formulario form{
+    margin: 7px;
+}
+
+#formulario *{
+    display: block;
 }
 
